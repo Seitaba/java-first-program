@@ -22,12 +22,12 @@ public class Utilities {
         return out;
     }
 
-    public static float getFloatValue(String in) {
+    public static float getFloatValue(String input) {
         float out = Float.MIN_VALUE;
         try {
-            out = Float.parseFloat(in);
+            out = Float.parseFloat(input);
         } catch (NumberFormatException e) {
-            throw new IllegalArgumentException(in + " cannot be converted into a 'float' value. Exiting program.");
+            throw new IllegalArgumentException(input + " cannot be converted into a 'float' value. Exiting program.");
         }
         return out;
     }
